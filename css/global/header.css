@@ -1,0 +1,31 @@
+header {
+  background-color: #292929;
+  padding: 8px 0;
+  color: #f0f0f0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo img {
+  height: 70px;
+}
+
+.header-logo h1 {
+  font-size: 18px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+}
