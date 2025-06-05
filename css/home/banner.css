@@ -1,3 +1,74 @@
-.swiper {
-  height: 400px;
+.banner {
+  position: relative;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  cursor: grab;
+}
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+.texto-slide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  bottom: 20%;
+  left: 27%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 42px;
+  border-radius: 10px;
+  text-align: end;
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+}
+
+.texto-slide::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #027aef;
+  position: absolute;
+  top: 52px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+  border: 2px solid #000;
+  opacity: 1;
+  border-radius: 0;
+}
+
+span.swiper-pagination-bullet {
+  border-radius: 0;
+  border: 2px solid #000;
+  opacity: 0.3;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
 }

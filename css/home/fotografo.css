@@ -1,0 +1,22 @@
+.fotografo {
+  padding-top: 80px;
+  background-color: #292929;
+}
+
+.fotografo-content {
+  display: flex;
+  gap: 40px;
+}
+
+.fotografo-content img {
+  max-width: 500px;
+}
+
+.fotografo-content blockquote {
+  color: #b8b8b8;
+  font-size: 52px;
+  font-family: "Merriweather", serif;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}

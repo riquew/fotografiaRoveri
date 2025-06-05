@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roveri Fotografia</title>
+  <link rel="icon" href="img/icon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -41,20 +43,41 @@
   <section class="banner">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">
+          <img src="./img/fotoBanner/foto1.jpg" alt="">
+          <div class="texto-slide">GUARDE O MOMENTO</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/fotoBanner/foto2.jpg" alt="">
+          <div class="texto-slide">RELEMBRE EMOÇÕES</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/fotoBanner/foto3.jpg" alt="">
+          <div class="texto-slide">VIVA A EXPERIÊNCIA</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/fotoBanner/foto4.jpg" alt="">
+          <div class="texto-slide">INSTANTES QUE DURAM</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/fotoBanner/foto1.jpg" alt="">
+          <div class="texto-slide">MOMENTOS INESQUECÍVEIS</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/fotoBanner/foto1.jpg" alt="">
+          <div class="texto-slide">CAPTURE A BELEZA</div>
+        </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
+  </section>
 
-
+  <section class="fotografo">
+    <article class="fotografo-content container">
+      <img src="./img/fotografo.JPG" alt="">
+      <blockquote>Através da lente da câmera, podemos revelar a beleza oculta no mundo que está ao nosso redor.
+      </blockquote>
+    </article>
   </section>
 
 
@@ -67,11 +90,14 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 10,
       loop: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      autoplay: {
+        delay: 5000,
       },
     });
   </script>
