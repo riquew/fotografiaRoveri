@@ -11,6 +11,7 @@
   flex: 1;
   width: 100%;
   gap: 20px;
+  line-height: 1.5;
 }
 
 .mural-content > div,
@@ -30,13 +31,14 @@
   align-items: end;
   justify-content: center;
   width: 50%;
+  text-align: end;
 }
 
 .mural-content .par {
   display: flex;
-  flex-direction: column; /* Garante empilhamento vertical */
-  align-items: start; /* Alinha à esquerda */
-  justify-content: center; /* Centraliza verticalmente */
+  flex-direction: column; 
+  align-items: start; 
+  justify-content: center; 
   width: 50%;
 }
 
@@ -47,5 +49,15 @@
 
 .mural-content p {
   color: #292929;
+  font-size: 18px;
   width: 70%;
 }
+
+@media (width >= 2000px) {
+  .mural-content p {
+  color: #292929;
+  width: 40%;
+}
+  
+}
+
