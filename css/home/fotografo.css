@@ -10,13 +10,20 @@
 
 .fotografo-content img {
   max-width: 500px;
+  z-index: 10;
 }
 
 .fotografo-content blockquote {
   color: #b8b8b8;
   font-size: 52px;
   font-family: "Merriweather", serif;
+  font-style: italic;
   display: flex;
   text-align: center;
   align-items: center;
+}
+
+.aspas-final {
+  display: flex;
+  align-self: end;
 }
