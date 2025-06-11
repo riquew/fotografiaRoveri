@@ -1,0 +1,22 @@
+.mini-mural {
+  background-color: #141414;
+  box-shadow: 0 -200px 0px #141414;
+}
+
+.gridSwiper {
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.gridSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #333;
+  height: calc((100% - 30px) / 2) !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

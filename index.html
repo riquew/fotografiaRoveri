@@ -53,15 +53,15 @@
         </div>
         <div class="swiper-slide">
           <img src="./img/fotoBanner/foto3.jpg" alt="">
-          <div class="texto-slide">VIVA A EXPERIÊNCIA</div>
+          <div class="texto-slide">VIVA DE NOVO</div>
         </div>
         <div class="swiper-slide">
           <img src="./img/fotoBanner/foto4.jpg" alt="">
-          <div class="texto-slide">INSTANTES QUE DURAM</div>
+          <div class="texto-slide">RECORDE MOMENTOS</div>
         </div>
         <div class="swiper-slide">
           <img src="./img/fotoBanner/foto5.jpg" alt="">
-          <div class="texto-slide">MOMENTOS INESQUECÍVEIS</div>
+          <div class="texto-slide">ETERNIZE LEMBRANÇAS</div>
         </div>
         <div class="swiper-slide">
           <img src="./img/fotoBanner/foto6.jpg" alt="">
@@ -91,17 +91,18 @@
     <article class="mural-content">
       <div class="impar">
         <h1>RECORDE<span class="ponto-detalhe">.</span></h1>
-        <p>A vida é feita de instantes que passam rápido, 
+        <p>A vida é feita de instantes que passam rápido,
           mas que <strong>
             guardamos para sempre.
           </strong>
-           Um sorriso, um abraço, um olhar — 
-          cada momento tem seu valor. E quando você registra, ele se torna eterno. 
-          Transforma memórias em histórias inesquecíveis. 
+          Um sorriso, um abraço, um olhar —
+          cada momento tem seu valor. E quando você registra, ele se torna eterno.
+          Transforma memórias em histórias inesquecíveis.
           <strong>
 
-            Porque recordar é viver de novo. </p>
-          </strong>
+            Porque recordar é viver de novo.
+        </p>
+        </strong>
       </div>
       <img src="./img/fotoMural/foto1.JPG" alt="">
     </article>
@@ -109,18 +110,19 @@
       <img src="./img/fotoMural/foto1.JPG" alt="">
       <div class="par">
         <h1>GUARDE<span class="ponto-detalhe">.</span></h1>
-        <p> Cada imagem, cada detalhe, 
-          cada momento merece um lugar especial. 
+        <p> Cada imagem, cada detalhe,
+          cada momento merece um lugar especial.
           Com a fotografia, você não apenas registra,
           <strong>
 
             mas preserva o que realmente
           </strong>
-          importa. Porque guardar é 
+          importa. Porque guardar é
           <strong>
 
-            proteger o que o tempo não pode apagar. </p>
-          </strong>
+            proteger o que o tempo não pode apagar.
+        </p>
+        </strong>
       </div>
     </article>
     <article class="mural-content">
@@ -129,15 +131,16 @@
         <p>
           <strong>
 
-            Eternize o que faz seu coração bater mais forte. 
+            Eternize o que faz seu coração bater mais forte.
           </strong>
-          Um instante, um gesto, uma emoção — tudo pode durar para sempre 
-          quando é registrado com cuidado. Transforme momentos únicos em 
-          lembranças eternas. 
+          Um instante, um gesto, uma emoção — tudo pode durar para sempre
+          quando é registrado com cuidado. Transforme momentos únicos em
+          lembranças eternas.
           <strong>
 
-            Porque o tempo passa, mas a memória fica. </p>
-          </strong>
+            Porque o tempo passa, mas a memória fica.
+        </p>
+        </strong>
       </div>
       <img src="./img/fotoMural/foto1.JPG" alt="">
     </article>
@@ -145,14 +148,34 @@
 
   </section>
 
-  <section>
-
+  <section class="mini-mural">
+    <div class="swiper gridSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto1.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto2.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto3.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto4.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto6.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto7.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto5.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto9.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto8.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto10.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto11.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto12.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto13.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto14.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto15.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto17.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto16.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="./img/fotoMiniMural/foto18.JPG" alt=""></div>
+      </div>
+    </div>
   </section>
 
   <footer>
 
   </footer>
-  <!-- Swiper JS -->
   <script src="./script.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
@@ -169,6 +192,29 @@
       },
     });
   </script>
+
+  <script>
+
+    var gridSwiper = new Swiper(".gridSwiper", {
+      slidesPerView: 3,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 0,
+      loop: true,
+      speed: 4000, // velocidade da transição (mais alto = mais suave)
+      autoplay: {
+        delay: 0, // movimento contínuo
+        disableOnInteraction: false, // não para quando o usuário clica
+        pauseOnMouseEnter: true, // para ao passar o mouse
+      },
+      pagination: {
+        el: ".grid-swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
 </body>
 
 </html>
